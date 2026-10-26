@@ -1,8 +1,8 @@
-import { Download, Mail } from "lucide-react";
+import { Download, Mail, Code2, Smartphone, Plug } from "lucide-react";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import linkedinIcon from "../assets/linkedin.svg";
-import heroImg from "../assets/boy.jpg";
+import heroImg from "../assets/Neon Developer Workspace at Blue Hour.png";
 
 const Hero = () => {
   const fadeLeft = (delay = 0) => ({
@@ -23,33 +23,42 @@ const Hero = () => {
     },
   });
 
+  const highlights = [
+    { icon: Code2, label: "React & Next.js" },
+    { icon: Smartphone, label: "Responsive UI" },
+    { icon: Plug, label: "API Integration" },
+  ];
+
   return (
     <section
       id="hero"
-      className="overflow-hidden container grid grid-cols-1 lg:grid-cols-2 items-center py-10 gap-10 md:gap-16 justify-center mx-auto min-h-screen"
+      className="container mx-auto grid min-h-screen grid-cols-1 items-center justify-center gap-10 overflow-hidden py-10 md:gap-16 lg:grid-cols-2"
     >
-      {/* left section */}
-      <div className="w-full space-y-5 text-center md:text-left relative">
-        <div className="absolute -top-30 -left-40 w-70 h-70 dark:bg-primary/40 blur-3xl animate-pulse"></div>
+      {/* Left section */}
+      <div className="relative w-full space-y-5 text-center md:text-left">
+        <div className="absolute -top-30 -left-40 h-70 w-70 animate-pulse bg-primary/20 blur-3xl dark:bg-primary/40" />
 
-        {/* 🟢 Availability badge */}
+        {/* Availability badge */}
         <motion.span
           variants={fadeLeft(0.1)}
           initial="hidden"
           whileInView="show"
-          className="flex items-center gap-2 bg-primary/30 w-fit rounded-full py-1 px-4 text-sm dark:text-primary m-auto md:m-0"
+          viewport={{ once: true }}
+          className="mx-auto flex w-fit items-center gap-2 rounded-full bg-primary/30 px-4 py-1 text-sm text-primary md:mx-0"
         >
-          <span className="bg-green-500 w-2 h-2 rounded-full"></span>
+          <span className="h-2 w-2 rounded-full bg-green-500" />
           Available for work
         </motion.span>
 
+        {/* Name */}
         <motion.h1
           variants={fadeLeft(0.2)}
           initial="hidden"
           whileInView="show"
-          className="text-gray-900 dark:text-white text-3xl md:text-4xl font-bold leading-tight"
+          viewport={{ once: true }}
+          className="text-3xl font-bold leading-tight text-gray-900 dark:text-white md:text-4xl"
         >
-          Hi, i'm{" "}
+          Hi, I'm{" "}
           <span className="inline-block bg-linear-to-r from-primary to-violet-500 bg-clip-text text-transparent">
             <Typewriter
               options={{
@@ -64,120 +73,107 @@ const Hero = () => {
           </span>
         </motion.h1>
 
-        {/* 🟢 Frontend Developer */}
-        <motion.h4
+        {/* Job title */}
+        <motion.h2
           variants={fadeLeft(0.3)}
           initial="hidden"
           whileInView="show"
-          className="text-xl md:text-2xl text-primary font-mono"
+          viewport={{ once: true }}
+          className="font-mono text-xl text-primary md:text-2xl"
         >
           &lt; <span>Frontend Developer</span> /&gt;
-        </motion.h4>
+        </motion.h2>
 
-        {/* 🟢 desc */}
+        {/* Description */}
         <motion.p
           variants={fadeLeft(0.4)}
           initial="hidden"
           whileInView="show"
-          className="text-gray-600 dark:text-gray-300 text-sm md:text-base leading-relaxed max-w-lg mx-auto md:mx-0"
+          viewport={{ once: true }}
+          className="mx-auto max-w-lg text-sm leading-relaxed text-gray-600 dark:text-gray-300 md:mx-0 md:text-base"
         >
-          I build modern, responsive, and user-friendly web applications using
-          React, Tailwind CSS, and the latest frontend technologies. Passionate
-          about clean code and beautiful UI.
+          I’m a Frontend Developer focused on building modern, responsive, and
+          user-friendly web applications with React, Next.js, and Tailwind CSS.
+          I enjoy writing clean, maintainable code and creating intuitive user
+          experiences.
         </motion.p>
 
+        {/* Skills highlights */}
         <motion.div
           variants={fadeLeft(0.5)}
           initial="hidden"
           whileInView="show"
-          className="flex items-center justify-center md:justify-start gap-6 md:gap-10 text-center"
+          viewport={{ once: true }}
+          className="flex flex-wrap items-center justify-center gap-3 pt-2 md:justify-start"
         >
-          <div className="flex flex-col">
-            <span className="text-gray-900 dark:text-white font-bold text-xl md:text-2xl">
-              +3
-            </span>
-            <p className="text-gray-500 dark:text-gray-400 text-xs md:text-sm">
-              Years Experience
-            </p>
-          </div>
-          <div className="flex flex-col">
-            <span className="text-gray-900 dark:text-white font-bold text-xl md:text-2xl">
-              +15
-            </span>
-            <p className="text-gray-500 dark:text-gray-400 text-xs md:text-sm">
-              Projects Done
-            </p>
-          </div>
-          <div className="flex flex-col">
-            <span className="text-gray-900 dark:text-white font-bold text-xl md:text-2xl">
-              +10
-            </span>
-            <p className="text-gray-500 dark:text-gray-400 text-xs md:text-sm">
-              Happy Clients
-            </p>
-          </div>
+          {highlights.map(({ icon: Icon, label }) => (
+            <div
+              key={label}
+              className="flex items-center gap-2 rounded-xl border border-primary/20 bg-primary/5 px-3 py-3 text-sm font-medium text-gray-700 transition-colors hover:border-primary/50 dark:text-gray-200"
+            >
+              <Icon size={18} className="shrink-0 text-primary" />
+              <span>{label}</span>
+            </div>
+          ))}
         </motion.div>
 
-        {/* 🟢 Buttons */}
+        {/* Buttons */}
         <motion.div
           variants={fadeLeft(0.6)}
           initial="hidden"
           whileInView="show"
-          className="flex flex-wrap items-center justify-center md:justify-start gap-4"
+          viewport={{ once: true }}
+          className="flex flex-wrap items-center justify-center gap-4 pt-2 md:justify-start"
         >
-          <button className="flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-full cursor-pointer hover:shadow-[0_0_8px] hover:bg-primary duration-200 transition-all shadow-lg font-medium">
+          <a
+            href="/Mohamed-Fadel-CV.pdf"
+            download
+            className="flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 font-medium text-white shadow-lg transition-all duration-200 hover:shadow-[0_0_8px] hover:brightness-110"
+          >
             <Download size={18} />
             Download CV
-          </button>
+          </a>
 
-          <button className="flex items-center gap-2 bg-transparent border-2 border-primary px-5 py-2.5 rounded-full cursor-pointer text-primary dark:text-white dark:border-primary hover:shadow-[0_0_8px] hover:bg-primary hover:text-white duration-200 transition-all font-medium">
+          <a
+            href="mailto:mf90705520@gmail.com"
+            className="flex items-center gap-2 rounded-full border-2 border-primary bg-transparent px-5 py-2.5 font-medium text-primary transition-all duration-200 hover:bg-primary hover:text-white dark:text-white"
+          >
             <Mail size={18} />
             Hire Me
-          </button>
+          </a>
 
-          {/* svg linked in */}
+          {/* LinkedIn */}
           <a
             href="https://www.linkedin.com/in/mohamed-fadel-709a542a1/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="group w-11 h-11 flex items-center justify-center rounded-full
-              border-2 border-primary/30 dark:border-primary/40
-              transition-all duration-300 hover:scale-105"
+            className="group flex h-11 w-11 items-center justify-center rounded-full border-2 border-primary/30 transition-all duration-300 hover:scale-105 hover:border-primary dark:border-primary/40"
           >
             <img
               src={linkedinIcon}
-              alt="LinkedIn"
-              className="w-5 h-5 object-contain 
-                opacity-70 dark:opacity-90
-                transition-all duration-300"
+              alt=""
+              className="h-5 w-5 object-contain opacity-70 transition-all duration-300 group-hover:opacity-100 dark:opacity-90"
             />
           </a>
         </motion.div>
       </div>
 
-      {/* right section - animation */}
+      {/* Right section - image */}
       <motion.div
         variants={fadeRight(0.3)}
         initial="hidden"
         whileInView="show"
-        className="relative flex justify-center items-center"
+        viewport={{ once: true }}
+        className="relative flex items-center justify-center"
       >
-        <div
-          className="absolute w-72 h-72 md:w-96 md:h-96 
-          bg-primary/30 dark:bg-primary/40 
-          rounded-full blur-3xl animate-pulse"
-        ></div>
+        <div className="absolute h-72 w-72 animate-pulse rounded-full bg-primary/30 blur-3xl dark:bg-primary/40 md:h-96 md:w-96" />
 
         <img
           src={heroImg}
-          alt="Mohamed Fadel"
-          loading="lazy"
-          className="relative w-64 h-64 md:w-80 md:h-80 
-            rounded-full object-cover
-            border-4 border-white dark:border-gray-800
-            shadow-2xl shadow-primary/30
-            hover:scale-105 transition-transform duration-500"
+          alt="Illustration representing Mohamed Fadel, Frontend Developer"
+          fetchPriority="high"
+          className="relative h-64 w-64 rounded-full border-4 border-white object-cover shadow-2xl shadow-primary/30 transition-transform duration-500 hover:scale-105 dark:border-gray-800 md:h-80 md:w-80"
         />
       </motion.div>
     </section>

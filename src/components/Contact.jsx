@@ -5,8 +5,14 @@ import { Send, CheckCircle } from "lucide-react";
 const Contact = () => {
   const [state, handleSubmit, reset] = useForm("xnpnqvnp");
 
+
+  const BASE = import.meta.env.BASE_URL;
+
   return (
-    <section id="contact" className="container py-20 relative">
+    <section
+      id="contact"
+      className="container py-20 relative overflow-x-hidden"
+    >
       {/* 🏷️ Title */}
       <div className="text-center group mb-16 w-fit mx-auto">
         <span className="inline-block text-primary font-semibold text-sm uppercase tracking-widest mb-3">
@@ -18,10 +24,10 @@ const Contact = () => {
         <span className="block h-1 w-20 bg-linear-to-r from-primary to-violet-500 mx-auto rounded-full transition-all duration-300 group-hover:w-40"></span>
       </div>
 
-      {/**/}
+      {/* 🟢 الهالة الخلفية */}
       <div className="absolute w-72 h-72 md:w-96 md:h-96 dark:bg-primary/10 blur-3xl pointer-events-none"></div>
 
-      {/* 🟢 succeeded message*/}
+      {/* 🟢 succeeded message */}
       {state.succeeded ? (
         <div
           className="max-w-lg mx-auto text-center bg-white dark:bg-gray-800/50 
@@ -167,7 +173,7 @@ const Contact = () => {
             <div className="absolute w-72 h-72 md:w-96 md:h-96 dark:bg-primary/20 bg-primary/10 blur-3xl -z-10 pointer-events-none"></div>
 
             <DotLottieReact
-              src="../../public/animations/TTA Contact Us.lottie"
+              src={`${BASE}animations/TTA Contact Us.lottie`}
               loop={true}
               autoplay={true}
               className="h-70"
