@@ -2,7 +2,7 @@ import { Download, Mail, Code2, Smartphone, Plug } from "lucide-react";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import linkedinIcon from "../assets/linkedin.svg";
-import heroImg from "../assets/Neon Developer Workspace at Blue Hour.png";
+import heroImg from "../assets/hero-image.webp";
 
 const Hero = () => {
   const fadeLeft = (delay = 0) => ({
@@ -43,7 +43,7 @@ const Hero = () => {
           variants={fadeLeft(0.1)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="mx-auto flex w-fit items-center gap-2 rounded-full bg-primary/30 px-4 py-1 text-sm text-primary md:mx-0"
         >
           <span className="h-2 w-2 rounded-full bg-green-500" />
@@ -55,7 +55,7 @@ const Hero = () => {
           variants={fadeLeft(0.2)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="text-3xl font-bold leading-tight text-gray-900 dark:text-white md:text-4xl"
         >
           Hi, I'm{" "}
@@ -78,7 +78,7 @@ const Hero = () => {
           variants={fadeLeft(0.3)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="font-mono text-xl text-primary md:text-2xl"
         >
           &lt; <span>Frontend Developer</span> /&gt;
@@ -89,7 +89,7 @@ const Hero = () => {
           variants={fadeLeft(0.4)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="mx-auto max-w-lg text-sm leading-relaxed text-gray-600 dark:text-gray-300 md:mx-0 md:text-base"
         >
           I’m a Frontend Developer focused on building modern, responsive, and
@@ -103,7 +103,7 @@ const Hero = () => {
           variants={fadeLeft(0.5)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="flex flex-wrap items-center justify-center gap-3 pt-2 md:justify-start"
         >
           {highlights.map(({ icon: Icon, label }) => (
@@ -122,7 +122,7 @@ const Hero = () => {
           variants={fadeLeft(0.6)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="flex flex-wrap items-center justify-center gap-4 pt-2 md:justify-start"
         >
           <a
@@ -164,7 +164,7 @@ const Hero = () => {
         variants={fadeRight(0.3)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         className="relative flex items-center justify-center"
       >
         <div className="absolute h-72 w-72 animate-pulse rounded-full bg-primary/30 blur-3xl dark:bg-primary/40 md:h-96 md:w-96" />

@@ -11,7 +11,7 @@ const Projects = () => {
       tech: ["React", "Tailwind"],
       demo: "https://mohamed-fadel1.github.io/Fruit-React-Tailwind/",
       link: "https://github.com/Mohamed-Fadel1/Fruit-React-Tailwind",
-      img: `${BASE}projects-Imgs/frute-store.png`,
+      img: `${BASE}projects-Imgs/frute-store.webp`,
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ const Projects = () => {
       tech: ["React", "Tailwind", "Router"],
       demo: "https://mohamed-fadel1.github.io/E-tutor-React/",
       link: "https://github.com/Mohamed-Fadel1/E-tutor-React",
-      img: `${BASE}projects-Imgs/e-tutor.png`,
+      img: `${BASE}projects-Imgs/e-tutor.webp`,
     },
     {
       id: 3,
@@ -29,7 +29,7 @@ const Projects = () => {
       tech: ["HTML", "Tailwind"],
       demo: "https://mohamed-fadel1.github.io/haloween-tailwind/",
       link: "https://github.com/Mohamed-Fadel1/haloween-tailwind",
-      img: `${BASE}projects-Imgs/halloween.png`,
+      img: `${BASE}projects-Imgs/halloween.webp`,
     },
     {
       id: 4,
@@ -38,7 +38,7 @@ const Projects = () => {
       tech: ["React", "Tailwind", "API"],
       demo: "https://mohamed-fadel1.github.io/ecommerce-vite-tailwind/#/login",
       link: "https://github.com/Mohamed-Fadel1/ecommerce-vite-tailwind",
-      img: `${BASE}projects-Imgs/Ecommerce-products.png`,
+      img: `${BASE}projects-Imgs/Ecommerce-products.webp`,
     },
     {
       id: 5,
@@ -47,7 +47,7 @@ const Projects = () => {
       tech: ["React", "Tailwind"],
       demo: "https://mohamed-fadel1.github.io/burger-tailwind/",
       link: "https://github.com/Mohamed-Fadel1/burger-tailwind",
-      img: `${BASE}projects-Imgs/burger-store.png`,
+      img: `${BASE}projects-Imgs/burger-store.webp`,
     },
     {
       id: 6,
@@ -56,7 +56,7 @@ const Projects = () => {
       tech: ["React", "Tailwind", "API"],
       demo: "https://mohamed-fadel1.github.io/tasty-ecommerce/",
       link: "https://github.com/Mohamed-Fadel1/tasty-ecommerce",
-      img: `${BASE}projects-Imgs/tasty-food.png`,
+      img: `${BASE}projects-Imgs/tasty-food.webp`,
     },
     {
       id: 7,
@@ -65,7 +65,7 @@ const Projects = () => {
       tech: ["HTML", "CSS", "JS"],
       demo: "https://mohamed-fadel1.github.io/Fokir/",
       link: "https://github.com/Mohamed-Fadel1/Fokir",
-      img: `${BASE}projects-Imgs/fokir.png`,
+      img: `${BASE}projects-Imgs/fokir.webp`,
     },
     {
       id: 8,
@@ -74,7 +74,7 @@ const Projects = () => {
       tech: ["React", "API", "Tailwind"],
       demo: "https://mohamed-fadel1.github.io/weather-react-project/",
       link: "https://github.com/Mohamed-Fadel1/weather-react-project",
-      img: `${BASE}projects-Imgs/weather.png`,
+      img: `${BASE}projects-Imgs/weather.webp`,
     },
     {
       id: 9,
@@ -83,7 +83,7 @@ const Projects = () => {
       tech: ["HTML", "Tailwind"],
       demo: "https://mohamed-fadel1.github.io/lightCode-tailwind/",
       link: "https://github.com/Mohamed-Fadel1/lightCode-tailwind",
-      img: `${BASE}projects-Imgs/light-code.png`,
+      img: `${BASE}projects-Imgs/light-code.webp`,
     },
   ];
 

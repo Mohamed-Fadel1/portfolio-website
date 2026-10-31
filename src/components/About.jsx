@@ -103,7 +103,7 @@ const About = () => {
           variants={fadeLeft(0.1)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.3 }}
           className="text-center group w-fit mx-auto mb-16"
         >
           <span className="inline-block tracking-widest text-primary uppercase font-semibold">
@@ -128,7 +128,7 @@ const About = () => {
               variants={fadeLeft(0.1)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: false, amount: 0.3 }}
               className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"
             >
               A dedicated{" "}
@@ -140,7 +140,7 @@ const About = () => {
               variants={fadeLeft(0.2)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: false, amount: 0.3 }}
               className="text-gray-600 dark:text-gray-400 leading-relaxed"
             >
               Hi! I'm{" "}
@@ -156,7 +156,7 @@ const About = () => {
               variants={fadeLeft(0.3)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: false, amount: 0.3 }}
               className="text-gray-600 dark:text-gray-400 leading-relaxed"
             >
               I work with JavaScript, React, and Tailwind CSS, and have built
@@ -170,7 +170,7 @@ const About = () => {
               variants={fadeLeft(0.4)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: false, amount: 0.3 }}
               className="text-gray-600 dark:text-gray-400 leading-relaxed"
             >
               I'm also expanding my knowledge of Next.js and backend
@@ -183,7 +183,7 @@ const About = () => {
               variants={fadeLeft(0.5)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: false, amount: 0.3 }}
               className="flex flex-wrap gap-3 pt-2"
             >
               {["JavaScript", "React", "Tailwind CSS", "Next.js"].map(
@@ -209,7 +209,7 @@ const About = () => {
                 variants={fadeRight(item.delay)}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: true, amount: 0.3 }}
+                viewport={{ once: false, amount: 0.3 }}
                 className="min-w-0 bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-5
                   border border-gray-100 dark:border-gray-700/50
                   hover:border-primary/40 transition-colors duration-300"
@@ -237,7 +237,7 @@ const About = () => {
             variants={fadeLeft(0)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: false, amount: 0.5 }}
             className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-3 text-center"
           >
             My <span className="text-primary">Skills</span>
@@ -247,7 +247,7 @@ const About = () => {
             variants={fadeLeft(0.1)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: false, amount: 0.5 }}
             className="text-gray-500 dark:text-gray-400 text-center mb-12 max-w-2xl mx-auto"
           >
             Technologies and practical skills I've developed through learning
@@ -261,7 +261,7 @@ const About = () => {
                 variants={fadeUp(index * 0.08)}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: true, amount: 0.15 }}
+                viewport={{ once: false, amount: 0.15 }}
                 className="group bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-6
                   border border-gray-100 dark:border-gray-700/50
                   hover:border-primary dark:hover:border-primary
@@ -294,7 +294,7 @@ const About = () => {
           variants={fadeUp(0.1)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.3 }}
           className="text-center max-w-3xl mx-auto"
         ></motion.div>
       </div>
