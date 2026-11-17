@@ -40,6 +40,9 @@ const NavBar = ({ handleToggleTheme, theme }) => {
       </ul>
 
       <button
+        aria-label={
+          theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
+        }
         onClick={handleToggleTheme}
         className="absolute -top-3 -right-3 bg-white dark:bg-gray-800 
           text-gray-800 dark:text-yellow-300

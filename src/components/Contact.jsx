@@ -5,7 +5,6 @@ import { Send, CheckCircle } from "lucide-react";
 const Contact = () => {
   const [state, handleSubmit, reset] = useForm("xnpnqvnp");
 
-
   const BASE = import.meta.env.BASE_URL;
 
   return (

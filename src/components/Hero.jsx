@@ -29,6 +29,8 @@ const Hero = () => {
     { icon: Plug, label: "API Integration" },
   ];
 
+  const cvUrl = `${import.meta.env.BASE_URL}Mohamed-Fadel-CV.pdf`;
+
   return (
     <section
       id="hero"
@@ -126,20 +128,22 @@ const Hero = () => {
           className="flex flex-wrap items-center justify-center gap-4 pt-2 md:justify-start"
         >
           <a
-            href="/Mohamed-Fadel-CV.pdf"
-            download
-            className="flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 font-medium text-white shadow-lg transition-all duration-200 hover:shadow-[0_0_8px] hover:brightness-110"
+            href={cvUrl}
+            download="Mohamed-Fadel-CV.pdf"
+            className="flex items-center gap-2 rounded-full bg-[#08758C] px-5 py-2.5 font-medium text-white shadow-lg transition-all duration-200 hover:shadow-[0_0_8px] hover:brightness-110"
           >
             <Download size={18} />
             Download CV
           </a>
 
           <a
-            href="mailto:mf90705520@gmail.com"
+            href={cvUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-full border-2 border-primary bg-transparent px-5 py-2.5 font-medium text-primary transition-all duration-200 hover:bg-primary hover:text-white dark:text-white"
           >
-            <Mail size={18} />
-            Hire Me
+            <Code2 size={18} />
+            View CV
           </a>
 
           {/* LinkedIn */}
